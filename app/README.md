@@ -1,18 +1,18 @@
- # AI Resume Analyzer
+# AI Resume Analyzer
 
 ## Overview
 
-AI Resume Analyzer is a web-based application that analyzes resumes and compares them with job descriptions to determine how well a candidate's profile matches the job requirements.
+AI Resume Analyzer is a web-based application that analyzes resumes and compares them with job descriptions to determine how well a candidate's profile matches job requirements.
 
-The system extracts skills from a resume, identifies skills required for a job, and calculates a match score while suggesting improvements for the resume.
+The system extracts skills from resumes, identifies skills required for a job, calculates a match score, and provides suggestions to improve the resume.
 
 ---
 
 ## Features
 
 * Upload resume in **PDF format**
-* Extract skills from resume automatically
-* Analyze **job description**
+* Automatic **skill extraction**
+* Analyze **job descriptions**
 * Calculate **resume-job match score**
 * Show **matched skills**
 * Identify **missing skills**
@@ -21,42 +21,20 @@ The system extracts skills from a resume, identifies skills required for a job, 
 
 ---
 
-## System Architecture
-
-User Uploads Resume
-│
-▼
-Resume Parser (PDF Text Extraction)
-│
-▼
-Skill Extraction (NLP-based keyword detection)
-│
-▼
-Job Description Skill Extraction
-│
-▼
-Skill Matching Algorithm
-│
-▼
-Match Score + Suggestions
-
----
-
 ## Technologies Used
 
 * Python
 * Streamlit
 * Pandas
-* NLP (keyword-based extraction)
+* NLP (keyword extraction)
 * pdfplumber
-* Scikit-learn (for potential ML extensions)
 
 ---
 
 ## Project Structure
 
 ```
-resume_analyzer
+AI-Resume-Analyzer
 │
 ├── app
 │   └── app.py
@@ -67,10 +45,9 @@ resume_analyzer
 ├── utils
 │   ├── resume_parser.py
 │   ├── skill_extractor.py
-│   ├── job_matcher.py
+│   └── job_matcher.py
 │
-├── models
-├── notebooks
+├── screenshots
 │
 ├── requirements.txt
 └── README.md
@@ -83,27 +60,13 @@ resume_analyzer
 Clone the repository:
 
 ```
-git clone https://github.com//AI-Resume-Analyzer.git
+git clone https://github.com/sairaj1616/AI-Resume-Analyzer.git
 ```
 
 Navigate to the project directory:
 
 ```
 cd AI-Resume-Analyzer
-```
-
-Create a virtual environment:
-
-```
-python -m venv venv
-```
-
-Activate the environment:
-
-Windows:
-
-```
-venv\Scripts\activate
 ```
 
 Install dependencies:
@@ -114,39 +77,23 @@ pip install -r requirements.txt
 
 ---
 
-## Running the Application
-
-Start the Streamlit application:
+## Run the Application
 
 ```
 streamlit run app/app.py
 ```
 
-The web interface will open in your browser.
-
 ---
 
 ## Example Output
 
-Resume Skills:
-
-* Python
-* Machine Learning
-* SQL
-
-Job Skills:
-
-* Python
-* TensorFlow
-* Deep Learning
-
-Match Score:
+Match Score Example:
 
 ```
 71.43%
 ```
 
-Missing Skills:
+Missing Skills Example:
 
 * TensorFlow
 * Deep Learning
@@ -158,16 +105,6 @@ Suggestions:
 
 ---
 
-## Future Improvements
-
-* Machine learning based skill extraction
-* Resume scoring using ATS metrics
-* Job role prediction
-* Resume formatting analysis
-* Integration with job portals
-
----
-
 ## Author
 
-Developed as part of a machine learning project demonstrating resume analysis and job matching using NLP techniques.
+Developed by **Sai Rajesh** as part of a machine learning project.
